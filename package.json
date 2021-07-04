@@ -1,6 +1,7 @@
 {
 	"name": "lawrencechen.dev",
 	"version": "0.0.1",
+	"license": "MIT",
 	"scripts": {
 		"dev": "TAILWIND_MODE=watch svelte-kit dev",
 		"build": "svelte-kit build",
