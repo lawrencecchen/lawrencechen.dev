@@ -1,0 +1,109 @@
+<script context="module" lang="ts">
+	export const prerender = true;
+	export const hydrate = false;
+</script>
+
+<script lang="ts">
+	import GitHubIcon from '$lib/icons/GitHubIcon.svelte';
+	import MailIcon from '$lib/icons/MailIcon.svelte';
+	import TwitterIcon from '$lib/icons/TwitterIcon.svelte';
+</script>
+
+<svelte:head>
+	<title>Lawrence Chen's Blog</title>
+	<meta property="og:title" content="Lawrence Chen's Blog" />
+	<meta property="og:site_name" content="Lawrence Chen's Blog" />
+	<meta name="twitter:site" content="@lawrencecchen" />
+</svelte:head>
+
+<main class="max-w-prose mx-auto p-5">
+	<section>
+		<h1 class="font-bold text-5xl lg:text-6xl my-10 text-gray-900">I'm Lawrence Chen</h1>
+		<div class="prose my-10">
+			<p>I love clean designs, playing clarinet, and making cool stuff.</p>
+			<p>
+				Automating biology over at
+				<a href="https://transistor.bio" target="_blank" rel="external noopener noreferrer"
+					>Transistor.bio</a
+				>.
+			</p>
+			<p>Check out my <a href="/blog">blog</a>.</p>
+		</div>
+	</section>
+	<!-- <section>
+		<h2 class="font-bold text-3xl lg:text-4xl mb-4">Mailing List</h2>
+		<div class="prose">
+			<p>Want to join my mailing list?</p>
+			<form id="form01" method="post">
+				<div class="text-left leading-none space-y-2 w-full max-w-sm">
+					<div class="flex flex-col">
+						<label for="form01-fname" class="text-sm text-gray-500">Name:</label>
+						<input
+							type="text"
+							name="fname"
+							id="form01-fname"
+							placeholder="Jane Eyre"
+							maxlength="128"
+							class="mt-1 block flex-1 text-sm border-gray-300 rounded focus:outline-none focus:ring-black focus:border-black transition"
+							required=""
+						/>
+					</div>
+					<div class="flex flex-col">
+						<label for="form01-email" class="text-sm text-gray-500">Email:</label>
+						<input
+							type="email"
+							name="email"
+							id="form01-email"
+							placeholder="jane@eyre.org"
+							maxlength="128"
+							class="mt-1 block flex-1 text-sm border-gray-300 rounded focus:outline-none focus:ring-black focus:border-black transition"
+							required=""
+						/>
+					</div>
+					<div class="field" style="display: none;">
+						<input
+							type="text"
+							name="your-url"
+							id="form01-your-url"
+							placeholder="Your Url"
+							maxlength="128"
+							disabled=""
+						/>
+					</div>
+					<button
+						class="relative grid grid-cols-6 p-2 group bg-black rounded text-gray-50 border border-transparent transition motion-reduce:transition-none focus:outline-none mt-2 w-full text-gray-600 text-base sm:text-sm
+     svelte-1chnjmt"
+						type="submit"
+						><div class="h-full grid place-items-center col-span-1" />
+						<div class="col-start-2 col-span-4 whitespace-nowrap">Subscribe ➤</div></button
+					>
+				</div>
+				<input type="hidden" name="id" value="form01" />
+			</form>
+		</div>
+	</section> -->
+	<section class="">
+		<h2 class="sr-only">Links</h2>
+		<div class="flex space-x-3">
+			<a
+				class="group"
+				href="https://twitter.com/lawrencecchen"
+				target="_blank"
+				rel="external noopener noreferrer"
+			>
+				<TwitterIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+			</a>
+			<a
+				class="group"
+				href="https://github.com/lawrencecchen"
+				target="_blank"
+				rel="external noopener noreferrer"
+			>
+				<GitHubIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+			</a>
+			<a class="group" href="mailto:lawrencechen2002@gmail.com">
+				<MailIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+			</a>
+		</div>
+	</section>
+</main>
