@@ -23,7 +23,7 @@ Goodbye Google, doubleclick, Disqus widgets, recaptcha, and all those other thin
 
 ## [SponsorBlock](https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=en)
 
-Say no to Squarespace, Skillshare, NordVPN, Audible, Brilliant, Honey, CuriosityStream, etc. Skip your favorite content creators when they shill. Don’t worry, they’ll (probably) still get paid!
+Say no to Squarespace, Skillshare, NordVPN, Audible, Brilliant, Honey, CuriosityStream, etc. Skip your favorite content creators when they shill. Don’t worry, they’ll (hopefully) still get paid!
 
 ## [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
 
