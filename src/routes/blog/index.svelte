@@ -1,15 +1,17 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
 
-	export const prerender = true;
-	export const hydrate = false;
+	// export const prerender = true;
+	// export const hydrate = false;
 
 	export const load: Load = async ({ fetch }) => {
 		try {
-			const data = await fetch('blog/routes.json?published').then((r) => r.json());
-			return {
-				props: { data }
-			};
+			const data = await fetch('blog/routes.json').then((r) => r.json());
+			if (data) {
+				return {
+					props: { data }
+				};
+			}
 		} catch (e) {
 			console.log(e);
 		}
@@ -32,7 +34,7 @@
 		{#each data.routes as { title, publishedOn, slug }}
 			<li class="py-12 w-full">
 				<article class="mx-auto max-w-prose space-y-3">
-					<a class="font-semibold text-xl py-2" href="/blog/{slug}">{title}</a>
+					<a class="font-semibold text-xl py-2" href="blog/{slug}" sveltekit:prefetch>{title}</a>
 					<dl>
 						<dt class="sr-only">Published on</dt>
 						<dd class="text-sm text-gray-500">

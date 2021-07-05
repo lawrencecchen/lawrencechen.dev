@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2021/hello-world.md",
+            "file": "2021/favorite-browser-extensions.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2021/hello-world.md",
+                "file": "2021/favorite-browser-extensions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "6d7d45764724bef7",
   "lastOpenFiles": [
-    "2021/hello-world.md",
     "2021/favorite-browser-extensions.md",
+    "2021/hello-world.md",
     "2021/Untitled.md",
     "2021/get-relative-time.md",
     "get-relative-time.md",

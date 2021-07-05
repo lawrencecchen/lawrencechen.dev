@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
-	export const prerender = true;
-	export const hydrate = false;
+	// export const prerender = true;
+	// export const hydrate = false;
 </script>
 
 <script lang="ts">
@@ -21,7 +21,7 @@
 				>.
 			</p>
 			<p>
-				Visit my <a href="/blog">blog</a>. Check out the
+				Visit my <a href="blog" sveltekit:prefetch>blog</a>. Check out the
 				<a
 					href="https://github.com/lawrencecchen/lawrencechen.dev"
 					target="_blank"
