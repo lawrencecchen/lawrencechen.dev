@@ -20,9 +20,9 @@
 	<section>
 		<h1 class="font-bold text-5xl lg:text-6xl my-10 text-gray-900">I'm Lawrence Chen</h1>
 		<div class="prose my-10">
-			<p>I love clean designs, playing clarinet, and making cool stuff.</p>
+			<p>I love clean design, playing clarinet, and making stuff.</p>
 			<p>
-				Automating biology over at
+				Currently automating biology over at
 				<a href="https://transistor.bio" target="_blank" rel="external noopener noreferrer"
 					>Transistor.bio</a
 				>.

@@ -7,7 +7,7 @@
 
 <div class="min-h-screen">
 	<div
-		class="w-full p-2 sticky top-0 backdrop-filter backdrop-blur-xl backdrop-saturate-200 bg-opacity-70 firefox:bg-opacity-95 bg-white z-10 transition duration-300 "
+		class="w-full p-2 top-0 backdrop-filter backdrop-blur-xl backdrop-saturate-200 bg-opacity-70 firefox:bg-opacity-95 bg-white z-10 transition duration-300 "
 	>
 		<div
 			class="grid sm:grid-cols-3 place-items-center justify-between items-center max-w-6xl mx-auto"

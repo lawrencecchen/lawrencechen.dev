@@ -3,4 +3,14 @@
 		<h1 class="font-bold text-5xl text-gray-900">Blog</h1>
 		<p class="text-gray-500">Thoughts, ideas, and stuff for self reference.</p>
 	</section>
+
+	<div class="py-8 mx-auto max-w-prose">
+		<ul>
+			<li>
+				<h2 class="font-semibold text-lg">
+					<a href="/blog/nice-chrome-extensions">Nice Chrome Extensions</a>
+				</h2>
+			</li>
+		</ul>
+	</div>
 </main>
