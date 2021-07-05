@@ -28,7 +28,14 @@
 					>Transistor.bio</a
 				>.
 			</p>
-			<p>Visit my <a href="/blog">blog</a>.</p>
+			<p>
+				Visit my <a href="/blog">blog</a>. Check out the
+				<a
+					href="https://github.com/lawrencecchen/lawrencechen.dev"
+					target="_blank"
+					rel="external noopener noreferrer">source</a
+				>
+			</p>
 		</div>
 	</section>
 	<!-- <section>
