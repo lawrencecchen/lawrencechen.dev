@@ -8,7 +8,7 @@
 		<ul>
 			<li>
 				<h2 class="font-semibold text-lg">
-					<a href="/blog/nice-chrome-extensions">Nice Chrome Extensions</a>
+					<a href="/blog/favorite-chrome-extensions">Favorite Chrome Extensions</a>
 				</h2>
 			</li>
 		</ul>

@@ -20,9 +20,7 @@
 			})} ({getRelativeTime(publishedDate)})
 		</time>
 	</section>
-	<!-- <h1>
-		{title}
-	</h1> -->
+
 	<div class="prose max-w-prose mx-auto py-12 px-5">
 		<slot />
 	</div>
