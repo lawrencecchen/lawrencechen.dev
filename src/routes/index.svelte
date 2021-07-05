@@ -34,7 +34,7 @@
 					href="https://github.com/lawrencecchen/lawrencechen.dev"
 					target="_blank"
 					rel="external noopener noreferrer">source</a
-				>
+				>.
 			</p>
 		</div>
 	</section>
