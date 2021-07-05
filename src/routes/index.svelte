@@ -9,14 +9,6 @@
 	import TwitterIcon from '$lib/icons/TwitterIcon.svelte';
 </script>
 
-<svelte:head>
-	<title>Lawrence Chen's Blog</title>
-	<meta name="description" content="Lawrence Chen's Blog" />
-	<meta property="og:title" content="Lawrence Chen's Blog" />
-	<meta property="og:site_name" content="Lawrence Chen's Blog" />
-	<meta name="twitter:site" content="@lawrencecchen" />
-</svelte:head>
-
 <main class="max-w-prose mx-auto p-5">
 	<section>
 		<h1 class="font-bold text-5xl lg:text-6xl my-10 text-gray-900">I'm Lawrence Chen</h1>
@@ -90,8 +82,8 @@
 			</form>
 		</div>
 	</section> -->
-	<section class="">
-		<h2 class="sr-only">Links</h2>
+	<section>
+		<h2 class="sr-only">Contact and Social Information</h2>
 		<div class="flex space-x-3">
 			<a
 				class="group"

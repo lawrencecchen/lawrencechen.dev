@@ -1,13 +1,15 @@
 ---
 layout: article
-title: Favorite Chrome Extensions
-publishedOn: 2021-07-05T01:14:07.696Z
+title: Favorite Browser Extensions
+publishedOn: July 4, 2021
+showRelativeTime: false
 updatedOn: null
+published: true
 ---
 
 ## [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)
 
-No brainer. Do you seriously like ads?
+Does anyone seriously like ads?
 
 ## [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
@@ -31,7 +33,7 @@ In case you don’t use Firefox. Make debugging APIs that much prettier.
 
 ## [Stylebot](https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en)
 
-Goodbye pages that think I want absurdly large headers.
+Goodbye pages that think people want absurdly large headers.
 
 ## [ScrollAnywhere](https://chrome.google.com/webstore/detail/scrollanywhere/jehmdpemhgfgjblpkilmeoafmkhbckhi)
 
