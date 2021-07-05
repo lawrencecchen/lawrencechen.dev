@@ -11,6 +11,7 @@
 
 <svelte:head>
 	<title>Lawrence Chen's Blog</title>
+	<meta name="description" content="Lawrence Chen's Blog" />
 	<meta property="og:title" content="Lawrence Chen's Blog" />
 	<meta property="og:site_name" content="Lawrence Chen's Blog" />
 	<meta name="twitter:site" content="@lawrencecchen" />
@@ -91,6 +92,7 @@
 				target="_blank"
 				rel="external noopener noreferrer"
 			>
+				<span class="sr-only">@lawrencecchen</span>
 				<TwitterIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
 			</a>
 			<a
@@ -99,9 +101,11 @@
 				target="_blank"
 				rel="external noopener noreferrer"
 			>
+				<span class="sr-only">Lawrence Chen's GitHub</span>
 				<GitHubIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
 			</a>
 			<a class="group" href="mailto:lawrencechen2002@gmail.com">
+				<span class="sr-only">lawrencechen2002@gmail.com</span>
 				<MailIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
 			</a>
 		</div>
