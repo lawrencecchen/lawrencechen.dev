@@ -27,7 +27,7 @@
 					>Transistor.bio</a
 				>.
 			</p>
-			<p>Check out my <a href="/blog">blog</a>.</p>
+			<p>Visit my <a href="/blog">blog</a>.</p>
 		</div>
 	</section>
 	<!-- <section>
