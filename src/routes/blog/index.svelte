@@ -34,7 +34,7 @@
 
 	<ul class="divide-y w-full">
 		{#each data.routes as { title, publishedOn, slug }}
-			<li class="py-12 w-full">
+			<li class="py-12 px-5 w-full">
 				<article class="mx-auto max-w-prose space-y-3">
 					<a class="font-semibold text-xl py-2" href="blog/{slug}" sveltekit:prefetch>{title}</a>
 					<dl>
