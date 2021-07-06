@@ -4,7 +4,7 @@ title: Hello, World!
 publishedOn: July 4, 2021
 showRelativeTime: false
 updatedOn: null
-published: true
+isPublished: true
 ---
 
 Hello, world! Hello, Twitter!

@@ -4,7 +4,7 @@ title: Favorite Browser Extensions
 publishedOn: July 4, 2021
 showRelativeTime: false
 updatedOn: null
-published: true
+isPublished: true
 ---
 
 ## [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)

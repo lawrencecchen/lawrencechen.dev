@@ -4,7 +4,7 @@
 	export let title = '';
 	export let publishedOn;
 	export let showRelativeTime;
-	export let updatedOn;
+	// export let updatedOn;
 	const publishedDate = new Date(publishedOn);
 </script>
 

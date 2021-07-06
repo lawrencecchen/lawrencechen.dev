@@ -1,17 +1,19 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
 
-	// export const prerender = true;
+	export const prerender = true;
 	// export const hydrate = false;
 
-	export const load: Load = async ({ fetch }) => {
+	export const load: Load = async ({ fetch, page }) => {
 		try {
-			const data = await fetch('blog/routes.json').then((r) => r.json());
-			if (data) {
-				return {
-					props: { data }
-				};
+			const data = await fetch(`/blog/routes.json`).then((r) => r.json());
+			if (!data) {
+				return { status: 404, error: 'Page not found.' };
 			}
+			return {
+				status: 200,
+				props: { data }
+			};
 		} catch (e) {
 			console.log(e);
 		}

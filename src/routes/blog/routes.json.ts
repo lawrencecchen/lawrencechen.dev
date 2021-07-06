@@ -2,8 +2,10 @@ import type { RequestHandler } from '@sveltejs/kit';
 import fs from 'fs';
 import util from 'util';
 import path from 'path';
+import matter from 'gray-matter';
 
 const readdir = util.promisify(fs.readdir);
+const BYPASS_KEY = import.meta.env.VITE_PREVIEW_SECRET as string;
 
 // ty https://qwtel.com/posts/software/async-generators-in-the-wild
 async function getFiles(dir) {
@@ -17,18 +19,27 @@ async function getFiles(dir) {
 	return Array.prototype.concat(...files);
 }
 
+export interface PostRoute {
+	layout: string;
+	title: string;
+	publishedOn: string;
+	showRelativeTime: boolean;
+	updatedOn: any;
+	isPublished: boolean;
+	abstract: string;
+	slug: string;
+}
+
 export const get: RequestHandler = async ({ query }) => {
-	const blogDirname = path.dirname(import.meta.url);
+	const blogDirname = 'src/routes/blog';
 	const files = await getFiles(blogDirname);
-	const paths = files.filter((file) => path.extname(file) === '.md');
-	const data = await paths
-		.map(async (postPath) => {
-			// Using mdsvex's frontmatter: https://mdsvex.com/docs#frontmatter-1
-			const post = await import(postPath);
-			// console.log(post.default.render());
-			const relativePath = path.relative(blogDirname, postPath);
+	const filePaths = files.filter((file) => path.extname(file) === '.md');
+	const posts: PostRoute[] = await Promise.all(
+		filePaths.map((filePath) => {
+			const relativePath = path.relative(blogDirname, filePath);
 			const slug = relativePath.replace(/\.[^/.]+$/, '');
-			const frontmatter = post.metadata;
+			const post = matter.read(filePath);
+			const frontmatter = post.data;
 
 			return {
 				layout: null,
@@ -36,17 +47,22 @@ export const get: RequestHandler = async ({ query }) => {
 				publishedOn: null,
 				showRelativeTime: false,
 				updatedOn: null,
-				published: null,
+				isPublished: null,
 				abstract: '',
 				slug,
 				...frontmatter
 			};
 		})
-		.filter((post) => !query.get('published') || !!post.published);
+	);
+
+	// TODO: figure out proper types
+	const publishedPosts: any = posts.filter(
+		(post) => post.isPublished || query.get('bypass_key') === BYPASS_KEY
+	);
 
 	return {
 		body: {
-			routes: await Promise.all(data)
+			routes: publishedPosts
 		}
 	};
 };
