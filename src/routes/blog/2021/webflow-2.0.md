@@ -9,6 +9,8 @@ isPublished: true
 
 [comment]: # "README: Edit the title of your post. Set `isPublished` to true whenever you're ready to publish. Don't forget to commit + push to your git repo."
 
+*Still a work in progress.*
+
 Of the no-code tools out there today, Webflow represents the local maxima of last-generation website builders. ^[(in terms of pure technical prowess of the product.) Other incumbents include WordPress, Wix, Weebly, and Squarespace. ] They have identified the archetypes of most websites, such as e-commerce, blogs, landing pages, and newsletters. However, they've created inflexible platforms rather than building blocks. These tools are poor SDKs for the web.
 
 While last-gen tools have empowered 10x designers and marketers, the next generation of low-code tools will create 10x developers. These tools will be characterized by JavaScript framework interoperability, flexible styling, incremental Git CI/CD integration, and built in data persistence. Unlike previous no-code tools, where creating CRUD apps were nigh impossible, CRUD functionality will be the baseline for Webflow 2.0 tools.
