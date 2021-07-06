@@ -17,7 +17,7 @@
 
 <main class="max-w-prose mx-auto p-5">
 	<section>
-		<h1 class="font-bold text-5xl lg:text-6xl my-10 text-gray-900">I'm Lawrence Chen</h1>
+		<h1 class="font-bold text-5xl lg:text-6xl my-10 text-gray-900">Hi, I'm Lawrence Chen</h1>
 		<div class="prose my-10">
 			<p>I love clean design, playing clarinet, and making stuff.</p>
 			<p>

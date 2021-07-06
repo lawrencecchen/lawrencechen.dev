@@ -56,9 +56,9 @@ export const get: RequestHandler = async ({ query }) => {
 	);
 
 	// TODO: figure out proper types
-	const publishedPosts: any = posts.filter(
-		(post) => post.isPublished || query.get('bypass_key') === BYPASS_KEY
-	);
+	const publishedPosts: any = posts
+		.sort((a, b) => new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime())
+		.filter((post) => post.isPublished || query.get('bypass_key') === BYPASS_KEY);
 
 	return {
 		body: {
