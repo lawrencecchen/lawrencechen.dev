@@ -1,12 +1,18 @@
 <script context="module" lang="ts">
-	// export const prerender = true;
+	export const prerender = true;
 	// export const hydrate = false;
 </script>
 
 <script lang="ts">
+	import { prefetch } from '$app/navigation';
 	import GitHubIcon from '$lib/icons/GitHubIcon.svelte';
 	import MailIcon from '$lib/icons/MailIcon.svelte';
 	import TwitterIcon from '$lib/icons/TwitterIcon.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		prefetch('/blog');
+	});
 </script>
 
 <main class="max-w-prose mx-auto p-5">

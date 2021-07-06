@@ -13,7 +13,7 @@ Does anyone seriously like ads?
 
 ## [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
-Why use this instead of the browser’s built in password manager? Portability. It’s also open source (hopefully community audited) and free for personal use!
+Doesn't my browser already have this? Well, it's not very portable. Bitwarden is open source (hopefully community audited) and free for personal use!
 
 ## [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
