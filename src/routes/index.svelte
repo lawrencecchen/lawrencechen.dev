@@ -27,7 +27,7 @@
 				>.
 			</p>
 			<p>
-				Visit my <a href="blog" sveltekit:prefetch>blog</a>. Check out the
+				Read my <a href="blog" sveltekit:prefetch>blog</a>. Check out its
 				<a
 					href="https://github.com/lawrencecchen/lawrencechen.dev"
 					target="_blank"
@@ -98,7 +98,7 @@
 				rel="external noopener noreferrer"
 			>
 				<span class="sr-only">@lawrencecchen</span>
-				<TwitterIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+				<TwitterIcon class="w-5 h-5 text-gray-500 group-hover:text-black transition" />
 			</a>
 			<a
 				class="group"
@@ -107,11 +107,11 @@
 				rel="external noopener noreferrer"
 			>
 				<span class="sr-only">Lawrence Chen's GitHub</span>
-				<GitHubIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+				<GitHubIcon class="w-5 h-5 text-gray-500 group-hover:text-black transition" />
 			</a>
 			<a class="group" href="mailto:lawrencechen2002@gmail.com">
 				<span class="sr-only">lawrencechen2002@gmail.com</span>
-				<MailIcon class="w-5 h-5 group-hover:text-gray-600 transition" />
+				<MailIcon class="w-5 h-5 text-gray-500 group-hover:text-black transition" />
 			</a>
 		</div>
 	</section>
