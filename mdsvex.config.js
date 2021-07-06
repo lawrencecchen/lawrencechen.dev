@@ -1,4 +1,6 @@
 import externalLinks from 'remark-external-links';
+import footnotes from 'remark-footnotes';
+
 const config = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 
@@ -10,7 +12,8 @@ const config = {
 	},
 
 	remarkPlugins: [
-		[externalLinks, { target: '_blank', rel: ['external', 'noopener', 'noreferrer'] }]
+		[externalLinks, { target: '_blank', rel: ['external', 'noopener', 'noreferrer'] }],
+		[footnotes, { inlineNotes: true }]
 	],
 	rehypePlugins: []
 };

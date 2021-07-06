@@ -30,6 +30,7 @@
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.3.1",
 		"remark-external-links": "^8.0.0",
+		"remark-footnotes": "2",
 		"svelte": "^3.38.3",
 		"svelte-check": "^2.2.0",
 		"svelte-preprocess": "^4.7.3",

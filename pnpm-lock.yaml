@@ -19,6 +19,7 @@ specifiers:
   prettier: ~2.2.1
   prettier-plugin-svelte: ^2.3.1
   remark-external-links: ^8.0.0
+  remark-footnotes: '2'
   svelte: ^3.38.3
   svelte-check: ^2.2.0
   svelte-preprocess: ^4.7.3
@@ -45,6 +46,7 @@ devDependencies:
   prettier: 2.2.1
   prettier-plugin-svelte: 2.3.1_prettier@2.2.1+svelte@3.38.3
   remark-external-links: 8.0.0
+  remark-footnotes: 2.0.0
   svelte: 3.38.3
   svelte-check: 2.2.0_postcss@8.3.5+svelte@3.38.3
   svelte-preprocess: 4.7.3_c050ecfc9d9c872c17608af578f36bd3
@@ -1586,6 +1588,10 @@ packages:
       mdast-util-definitions: 4.0.0
       space-separated-tokens: 1.1.5
       unist-util-visit: 2.0.3
+    dev: true
+
+  /remark-footnotes/2.0.0:
+    resolution: {integrity: sha512-3Clt8ZMH75Ayjp9q4CorNeyjwIxHFcTkaektplKGl2A1jNGEUey8cKL0ZC5vJwfcD5GFGsNLImLG/NGzWIzoMQ==}
     dev: true
 
   /require-from-string/2.0.2:
