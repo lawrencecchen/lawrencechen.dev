@@ -4,14 +4,14 @@
 </script>
 
 <script lang="ts">
-	import { prefetch } from '$app/navigation';
+	import { prefetchRoutes } from '$app/navigation';
 	import GitHubIcon from '$lib/icons/GitHubIcon.svelte';
 	import MailIcon from '$lib/icons/MailIcon.svelte';
 	import TwitterIcon from '$lib/icons/TwitterIcon.svelte';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		prefetch('/blog');
+		prefetchRoutes();
 	});
 </script>
 
