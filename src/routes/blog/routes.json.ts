@@ -8,7 +8,11 @@ const readdir = util.promisify(fs.readdir);
 const BYPASS_KEY = import.meta.env.VITE_PREVIEW_SECRET as string;
 
 // ty https://qwtel.com/posts/software/async-generators-in-the-wild
-async function getFiles(dir) {
+async function getFiles(dir: string) {
+	// Ignore config files
+	if (dir.includes('.obsidian') || dir.includes('_templates')) {
+		return [];
+	}
 	const dirents = await readdir(dir, { withFileTypes: true });
 	const files = await Promise.all(
 		dirents.map((dirent) => {
