@@ -33,22 +33,34 @@
 	</section>
 
 	<ul class="divide-y w-full">
-		{#each data.routes as { title, publishedOn, slug }}
+		{#each data.routes as { title, publishedOn, updatedOn, slug }}
 			<li class="py-12 px-5 w-full">
 				<article class="mx-auto max-w-prose space-y-3">
 					<a class="font-semibold text-xl py-2" href="blog/{slug}" sveltekit:prefetch>{title}</a>
 					<dl>
 						<dt class="sr-only">Published on</dt>
 						<dd class="text-sm text-gray-500">
-							<time datetime={publishedOn}>
-								{new Date(publishedOn).toLocaleDateString(undefined, {
-									weekday: 'long',
-									year: 'numeric',
-									month: 'long',
-									day: 'numeric'
-								})}
-								({getRelativeTime(new Date(publishedOn))})
-							</time>
+							{#if updatedOn}
+								<time datetime={updatedOn}>
+									{new Date(updatedOn).toLocaleDateString(undefined, {
+										weekday: 'long',
+										year: 'numeric',
+										month: 'long',
+										day: 'numeric'
+									})}
+									(Last updated {getRelativeTime(new Date(updatedOn))})
+								</time>
+							{:else}
+								<time datetime={publishedOn}>
+									{new Date(publishedOn).toLocaleDateString(undefined, {
+										weekday: 'long',
+										year: 'numeric',
+										month: 'long',
+										day: 'numeric'
+									})}
+									({getRelativeTime(new Date(publishedOn))})
+								</time>
+							{/if}
 						</dd>
 					</dl>
 				</article>

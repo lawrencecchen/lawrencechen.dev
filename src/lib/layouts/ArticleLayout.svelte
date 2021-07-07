@@ -4,8 +4,9 @@
 	export let title = '';
 	export let publishedOn;
 	export let showRelativeTime;
-	// export let updatedOn;
+	export let updatedOn = null;
 	const publishedDate = new Date(publishedOn);
+	const updatedOnDate = new Date(updatedOn) ?? null;
 </script>
 
 <svelte:head>
@@ -25,7 +26,7 @@
 				@lawrencecchen
 			</a>
 			/
-			<time datetime={publishedOn}>
+			<time datetime={publishedDate.toString()}>
 				{publishedDate.toLocaleDateString(undefined, {
 					weekday: 'long',
 					year: 'numeric',
@@ -36,6 +37,15 @@
 					({getRelativeTime(publishedDate)})
 				{/if}
 			</time>
+			{#if updatedOn}
+				(Updated on <time datetime={updatedOnDate.toString()}>
+					{updatedOnDate.toLocaleDateString(undefined, {
+						year: 'numeric',
+						month: 'long',
+						day: 'numeric'
+					})}
+				</time>)
+			{/if}
 		</p>
 	</section>
 

@@ -3,7 +3,7 @@ layout: article
 title: Webflow 2.0
 publishedOn: 2021-07-05 21:28
 showRelativeTime: false
-updatedOn: null
+updatedOn: 2021-07-07 00:20
 isPublished: true
 ---
 
