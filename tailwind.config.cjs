@@ -4,7 +4,7 @@ module.exports = {
 	mode: 'jit',
 	purge: {
 		// Does not specify src because we have some tailwind classes in mdsvex.config.js
-		content: ['./src/**/*.{html,js,svelte,ts,md}']
+		content: ['./src/**/*.{html,js,svelte,ts,md}', './mdsvex.config.js']
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {

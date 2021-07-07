@@ -19,16 +19,16 @@ const config = {
 	rehypePlugins: [
 		slug,
 		[
-			autolinkHeadings
-			// {
-			// 	properties: {
-			// 		ariaHidden: false,
-			// 		tabIndex: 0,
-			// 		class: 'underline-none border-black hover:border-b hover:border-dotted transition',
-			// 		style: 'text-decoration: none'
-			// 	},
-			// 	behavior: 'wrap'
-			// }
+			autolinkHeadings,
+			{
+				properties: {
+					ariaHidden: false,
+					tabIndex: 0,
+					class: 'underline-none border-black hover:border-b hover:border-dotted transition',
+					style: 'text-decoration: none'
+				},
+				behavior: 'wrap'
+			}
 		]
 	]
 };
