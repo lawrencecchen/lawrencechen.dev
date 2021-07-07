@@ -16,7 +16,21 @@ const config = {
 		[externalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
 		[footnotes, { inlineNotes: true }]
 	],
-	rehypePlugins: [slug, [autolinkHeadings, {}]]
+	rehypePlugins: [
+		slug,
+		[
+			autolinkHeadings
+			// {
+			// 	properties: {
+			// 		ariaHidden: false,
+			// 		tabIndex: 0,
+			// 		class: 'underline-none border-black hover:border-b hover:border-dotted transition',
+			// 		style: 'text-decoration: none'
+			// 	},
+			// 	behavior: 'wrap'
+			// }
+		]
+	]
 };
 
 export default config;

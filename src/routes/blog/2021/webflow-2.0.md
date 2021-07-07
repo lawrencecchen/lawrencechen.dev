@@ -35,5 +35,10 @@ One possible stack (that I'm very bullish on) would integrate [SvelteKit](https:
 
 Webflow 2.0 tools will take advantage of modern browsers. The activation energy for my envisioned killer low-code builder will be when [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/) enables [Vite](https://vitejs.dev/) to run in the browser. [Next.js Live](https://nextjs.org/live) provides a brief glimpse at this future, although Next.js will certainly be surpassed by Vite based frameworks.
 
-## The No Code Programming Language
+## Webflow 3.0
 
+At this point, someone will have [automated programming CRUD apps](https://youtu.be/N2bXEUSAiTI?t=758). [GPT-3 layout generators](https://twitter.com/sharifshameem/status/1282676454690451457?lang=en) show the IDE's of tomorrow. If the Tailwind team trained a model based off their menagerie of [Tailwind UI](https://tailwindui.com/) layouts and components, they will have solved half the equation.
+
+If I were chasing this problem today I would first create a component library. Tailwind code generation seems [fairly trivial for GPT-3](https://themesberg.com/blog/tailwind-css/gpt-3-tailwind-css-ai-code-generator). However, [GPT-3 and OpenAI aren't particularly open](https://news.ycombinator.com/item?id=23895684). GPT-J from [EleutherAI](https://6b.eleuther.ai/) is particularlly promising, especially for [code generation](https://minimaxir.com/2021/06/gpt-j-6b/).
+
+It seems unclear how far we can move up the stack of programming languages. The 3.0 "developer" might interact with this tool through natural language. But if we were to automate this and move up another level, what would even be created? And for whom will the end product be created? Current tools empower makers to materialize their imaginations. Their products solves problems and optimizes variables such as time and accessibility. The final loss function may very well devolve into fulfilling humankind's infinite desires.
